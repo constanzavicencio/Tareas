@@ -1,20 +1,60 @@
-# Actualizaciones Tarea
+# Tarea 1: DCCiudad 🚈🐈
 
-> 19 de marzo
+## Consideraciones generales :octocat:
 
-1. Se copió el directorio `data` dentro de `tests_publicos` dado lo mencionado [en esta issue](https://github.com/IIC2233/Syllabus/issues/42)
+Por tiempo, solo se realizó parcialmente las funciones de la clase ```RedMetro``` en el módulo ```red.py```.
 
-2. Se actualizó los tests `test_04_nivel_conexiones.py` y `test_06_ciclo_mas_corto.py` para aceptar que puedan hacer `from dcciudad import alcanzable, elevar_matriz` o `import dcciudad` al momento de verificar que ocupen las funciones solicitadas. Esta situación se conversa [en esta issue](https://github.com/IIC2233/Syllabus/issues/44)
+### Cosas implementadas y no implementadas :white_check_mark: :x:
+#### 🟠 Funcionalidades
+Se completaron algunas funciones, pero otras no:
 
-3. El Readme original se cambió su nombre a "README BASE.md" para dejar este Readme como un documento para registrar cualquier cambio que se hagan a los archivos entregados.
+* ✅ informacion_red
+
+* ✅ agregar_tunel
+
+* ✅ tapar_tunel
+
+* ✅ invertir_tunel
+
+* ✅ nivel_conexiones
+            
+* 🟠 rutas_posibles: Un test falla
+
+* ❌ ciclo_mas_corto
+
+* ❌ estaciones_intermedias
+
+* ❌ estaciones_intermedias_avanzado
+
+* ❌ cambiar_planos
+
+* ❌ asegurar_ruta
+
+#### ❌ Menú de Acciones
+#### ✅ Modularización
+#### ✅ PEP8
 
 
-> 20 de marzo
- 
-1. Se actualizó los tests `test_04_nivel_conexiones.py` y `test_06_ciclo_mas_corto.py` porque la solución subida el 19 de marzo no estaba correta. Esta situación se conversa [en esta issue](https://github.com/IIC2233/Syllabus/issues/58).
+## Ejecución :computer:
+El módulo principal de la tarea a ejecutar es  ```todos_tests.py```, dado que no tuve tiempo de hacer el menú
 
-2. Se actualizó  `test_10_asegurar_ruta.py` para ser consistente con el enunciado. En particular, en la explicación de `asegurar_ruta`, el enunciado dice _"Este método se debe encargar de **copiar la red de metro**"_, pero los _tests_ no estaban validando correctamente esta afirmación. Esta situación se notificó [en esta issue](https://github.com/IIC2233/Syllabus/issues/65).
+Para que el módulo funcione:
 
-> 21 de marzo
+1. Deben existir todos los tests de la carpeta ```test_publicos```
 
-1. Se actualizó un _typo_ del enunciado. En particular, en el ejemplo del método `nivel_conexiones`, la tercera lista de conexiones era `[0, 0, 1, 0]`, pero debía ser `[0, 0, 0, 1]`. Esta situación se conversa [en esta issue](https://github.com/IIC2233/Syllabus/issues/56)
+2. Deben existir los archivos de la carpeta ````data```
+
+3. Debe existir el archivo ```dcciudad.pyc```
+
+
+Además, la versión de Python utilizada debe ser ```3.11.x``` con x mayor o igual a 7
+
+
+## Librerías :books:
+### Librerías externas utilizadas
+La única librería nueva que se implementa es ```collections.deque``` la cual se implementa en el módulo ```red.py```, sin embargo no es necesario instalarla (viene instalada con Python)
+
+### Librerías propias
+Por otro lado, los módulos que fueron creados fueron los siguientes:
+
+1. ```red```: Contiene a ```RedMetro```
